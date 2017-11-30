@@ -1,0 +1,135 @@
+$SCUred: #b30738;
+$SCUdarkred: #97052e;
+
+body {
+  background-color: $SCUred;
+}
+
+.flex {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: $SCUred;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: $SCUdarkred;
+  }
+}
+
+.link {
+  color: $SCUred;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: $SCUdarkred;
+  }
+}
+
+form {
+  background-color: $SCUred;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 100%;
+    .card-block {
+      padding: 15px 0;
+    }
+  }
+}
+
+form#login, form#createAccount {
+  .card {
+    max-width: 300px;
+  }
+}
+
+body {
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  max-width: 350px;
+}
+
+label {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 5px;
+  li {
+    list-style-type: none;
+  }
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+  color: white;
+}
+
+.bootstrap-select.btn-group .dropdown-menu a.dropdown-item span.dropdown-item-inner span.text {
+  margin-right: 15px;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 350px;
+  max-width: 70%;
+}
+
+#currentAvailabilities li:last-of-type {
+  margin-bottom: 15px;
+}
+
+.error {
+  border: 2px solid $SCUred;
+}
+
+.dataTables_scrollBody {
+	height: initial !important;
+	max-height: 500px;
+}
+
+
+table.dataTable tbody tr.selected {
+  background-color: rgba(151, 5, 46, .5);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(179, 7, 56, .1);
+}
+
+#resultsNames, #resultsEmails {
+	text-overflow: ellipsis;
+	white-space: pre;
+	overflow: hidden;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+	overflow: initial !important;
+  transform: initial !important;
+  top: 48px !important;
+  will-change: initial !important;
+  .inner {
+    overflow: hidden !important;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  white-space: initial;
+}
